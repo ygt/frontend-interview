@@ -20,8 +20,8 @@ The autocomplete should look like the following mockup:
 
 #### Closed:
 
-![Closed autocomplete](https://raw.githubusercontent.com/ygt/frontend-interview/master/src/images/mockups/autocomplete-closed.png)
+![Closed autocomplete](src/images/mockups/autocomplete-closed.png)
 
 #### Open:
 
-![Open autocomplete](https://raw.githubusercontent.com/ygt/frontend-interview/master/src/images/mockups/autocomplete-open.png)
+![Open autocomplete](src/images/mockups/autocomplete-open.png)
