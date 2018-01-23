@@ -10,6 +10,14 @@ module.exports = {
     publicPath: "/dist/",
     filename: "app.js"
   },
+  devServer: {
+    proxy: {
+      "/api/autocomplete": {
+        target: "https://www.yourgolftravel.com",
+        changeOrigin: true
+      }
+    }
+  },
   plugins: [
     new CopyWebpackPlugin([{ from: "./images" }])
   ],
