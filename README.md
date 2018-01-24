@@ -8,7 +8,7 @@ Your task is to create an autocomplete utilising part of the [Your Golf Travel A
 
 * Create an autocomplete that shows a list of venues that have a name matching the user's input. The list of results should update dynamically as the input changes.
 
-* Our public API provides an autocomplete endpoint here: https://www.yourgolftravel.com/api/autocomplete. You can provide a query term using a query parameter named `q` e.g. `/api/autocomplete?q=golf`.
+* Our public API provides an autocomplete endpoint, which is proxied through http://localhost:8080/api/autocomplete. You can provide a query term using a query parameter named `q` e.g. `/api/autocomplete?q=golf`.
 
 * The destination URL is calculated by appending `https://www.yourgolftravel.com/` to the `slug` parameter in the results. The user can click any of the results to navigate to that result, or click the 'Search' button to navigate automatically to the first result.
 
@@ -16,7 +16,7 @@ Your task is to create an autocomplete utilising part of the [Your Golf Travel A
 
 ## Mockups
 
-The autocomplete should look like the following mockup:
+The following mockup shows the autocomplete in action:
 
 #### Closed:
 
