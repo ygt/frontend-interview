@@ -1,13 +1,25 @@
-<html>
-
+<html lang="en">
 <head>
   <title>Express</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
-</body>
+  <div id="root"></div>
 
+  <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+  <script type="text/babel">
+    const root = document.getElementById("root");
+    const element = <div>
+      <h1>Express</h1>
+      <p>Welcome to Express</p>
+      </div>;
+
+    ReactDOM.render(element, root);
+  </script>
+</body>
 </html>
