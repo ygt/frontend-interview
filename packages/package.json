@@ -1,18 +1,28 @@
 {
-  "name": "james-shore-interview",
-  "version": "0.0.0",
+  "name": "frontend-interview-packages",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "watch": "nodemon --ext js,css"
+    "watch": "npm-run-all -p watch:*",
+    "watch:node": "nodemon --ext js,ts,css",
+    "watch:sass": "sass ./sass:./public/stylesheets --no-source-map --watch"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "~4.16.1",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "npm-run-all": "^4.1.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.55.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4"
   }
 }
